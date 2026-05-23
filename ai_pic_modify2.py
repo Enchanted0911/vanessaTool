@@ -206,7 +206,7 @@ class HunyuanImageProcessor:
             # "严格保持模特所穿衣服的颜色、款式、面料、图案和版型完全不变，"
             # "整体画质清晰，细节丰富，专业商品展示风格, "
             # "如果图像有人脸，将人脸改成亚洲美女风格"
-            "请你去除图片中的水印，人物改成亚洲面孔的美女，姿势变换成其他性感姿势，姿势改动要大, 不要改变衣服的任何细节！"
+            "请你去除图片中的水印，姿势变换成其他性感姿势，姿势凸显身材曲线，模特肤色要自然白, 姿势改动要大, 人物朝向要与原图一致，人物改成亚洲面孔的美女，不要改变衣服的任何细节！"
         )
 
     def _submit_image_to_image_job(
@@ -416,7 +416,7 @@ def main() -> None:
         sys.exit(1)
 
     # ★ 修改此变量指定要处理的图片目录
-    input_dir = "pics"
+    input_dir = "C:/Users/29380/Downloads/first_pics"
 
     processor = HunyuanImageProcessor(
         secret_id=secret_id,
